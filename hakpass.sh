@@ -13,7 +13,11 @@ then
 fi
 
 # Check if the file name is provided as an argument
-if [ $# -eq 0 ]; then
+if [ "$1" == "--default" ]; then
+ $file="~/.hakpass/pinlist.txt"
+elif ["$1" == "*.txt" ]; then
+  $file="$1"
+elif [ $# -eq 0 ]; then
     echo "Usage: $0 <pinlist file>"
     exit 1
 fi
@@ -33,4 +37,4 @@ do
 
     # Wait a bit before sending the next PIN to avoid overwhelming the device
     sleep 1
-done < "$1"
+done < "$file"
