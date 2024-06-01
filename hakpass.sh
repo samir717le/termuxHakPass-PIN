@@ -4,7 +4,7 @@ if [ "$1" == "-h" ]; then
     echo " $0 -h For This Help"
     exit 1
 fi
--h) echo "$0 <pin
+
 # Ensure adb is installed
 if ! command -v adb &> /dev/null
 then
