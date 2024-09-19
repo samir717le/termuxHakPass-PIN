@@ -22,3 +22,17 @@ git clone https://github.com/samir717le/termuxHakPass-PIN.git
 cd termuxHakPass-PIN
 chmod +x hakpass.sh
 bash hakpass.sh -h
+```
+## direct install 
+```
+pkg update && pkg upgrade
+
+pkg install git android-tools termux-api -y
+
+git clone https://github.com/samir717le/termuxHakPass-PIN.git
+cd termuxHakPass-PIN
+mv hakpass $PREFIX/bin/
+chmod +x $PREFIX/bin/hakpass
+cd ..
+mv termuxHak* .hakpass
+hakpass -h
