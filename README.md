@@ -9,8 +9,8 @@ A Script For Termux That use ADB To Unlock Locked Android Phone Using USB | тЪая
 4) PIN list
 5) USB/ADB
 # Test
-not tested 
-important ** Target device need to enable usb debugging **
+not tested <br>
+important ``` Target device need to enable usb debugging ```
 # Install
 ```
 pkg update && pkg upgrade
