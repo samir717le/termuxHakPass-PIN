@@ -1,7 +1,8 @@
 #!/bin/bash
 if [ "$1" == "-h" ]; then
-    echo " $0 <pinlist file>"
-    echo " $0 -h For This Help"
+    echo " hakpass <pinlist file>"
+    echo " hakpass -h For This Help"
+    echo "hakpass --default for running with default pinlist"
     exit 1
 fi
 
